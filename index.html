@@ -222,18 +222,28 @@
 </section>
 
 <section class="contact" id="contact">
-  <div class="center-text" data-aos="fade-down">
-    <h2>Contact<span>me</span></h2>
-  </div>
-  <div class="contact-form" data-aos="zoom-in">
-    <form action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="access_key" value="2d8f5bc9-5b0d-4b67-ab61-418bd56ae350">
-      <input type="text" placeholder="Your name" required>
-      <input type="email" placeholder="Email Address..." required>
-      <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here." required></textarea>
-      <input type="submit" value="Send Message" class="send-btn">
-    </form>
-  </div>
+    <div class="center-text" data-aos="fade-down">
+      <h2>Contact<span>me</span></h2>
+    </div>
+            <div class="contact-form" data-aos="zoom-in">
+              <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                <input type="hidden" name="access_key" value="2d8f5bc9-5b0d-4b67-ab61-418bd56ae350" />
+                <input type="hidden" name="subject" value="Response from portfolio" />
+                <input type="checkbox" name="botcheck" id="" style="display: none;" />
+                <div class="mb-6">
+                    <input type="text" placeholder="Your name" required>
+                  <div class="mb-6">
+                    <input type="email" placeholder="Email Address..." required>
+                  </div>
+                  <div class="mb-6">
+                    <textarea rows="5" name="message" id="message" placeholder="Your Message Here.." class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
+                  </div>
+                  <div class="mb-6">
+                    <input type="submit" value="Send Message" class="send-btn">
+                  
+                  </div>
+                  <p class="text-base text-center text-gray-400" id="result"></p>
+                </form>
 </section>
 
 <div class="footer">
